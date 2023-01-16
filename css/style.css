@@ -73,11 +73,12 @@ h3 {
     background-color: rgba(0, 0, 0, .5);
 }
 
-.header__logo {
-    margin: 3rem 0;
-}
+
 
 /** Footer **/
+.footer__logo {
+    margin: 1rem 0;
+}
 .footer {
     background-color: var(--mediorojo);
     padding: 1rem 0;
