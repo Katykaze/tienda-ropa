@@ -82,12 +82,68 @@ h3 {
     margin-top: 2rem;
 }
 
+
 .footer__texto {
     font-family: var(--fuentePrincipal);
     text-align: center;
     font-size: 2.2rem;
 }
+/*footer redes sociales*/
 
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.social-icons li {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    font-size: 20px;
+}
+.social-icons i {
+    color: #fff;
+    position: relative;
+    top: -43px;
+    left: 1px;
+    transition: all 265ms ease-out;
+    /*line-height:;*/
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons a::before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(43deg, var(--secundario) 0%, var(--primario) 46%, var(--primarioOscuro) 100%);
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover::before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+
+}
+
+.social-icons a:hover i {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    color: #fff;
+    background: linear-gradient(43deg, var(--secundario) 0%, var(--primario) 46%, var(--primarioOscuro) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
 /** Navegacion **/
 .navegacion {
     background-color: var(--mediorojo);
