@@ -248,10 +248,11 @@ h3 {
         text-align: center;
         font-size: 30px;
     }
-    .slider-container img {
-        width: 50%;
+    #carrusel2 img,#carrusel img{
+        width: 80%;
+        height: 80%;
     }
-
+    
 
 }
 
