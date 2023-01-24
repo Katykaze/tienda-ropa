@@ -3,58 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-            <form class="formulario">
-                <fieldset>
-                    <legend>Registro de Usuario</legend>
+<div id="contenedor">
 
-                    <div class="contenedor-campos">
-                        <div class="campo">
-                            <label>Nombre
-                            <input class="input-text" type="text" placeholder="Tu Nombre">
-                            </label>
-                        </div>
-                        <div class="campo">
-                            <label>Apellido
-                            <input class="input-text" type="text" placeholder="Tu Apellido">
-                            </label>
-                        </div>
-                        <div class="campo">
-                            <label for="email">Email
-                            <input class="input-text" type="email" placeholder="Tu Email">
-                            </label>
-                        </div>
+    <div id="contenedorcentrado">
+        <div id="login">
+            <form id="loginform">
+                <label for="usuario">Nombre</label>
+                <input id="usuario" type="text" name="usuario" placeholder=Nombre required>
 
-                        <div class="campo">
-                            <label>Teléfono</label>
-                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
-                        </div>
+                <label for="apellido">Apellido
+                <input id="apellido" type="text" name="apellido" placeholder="Apellido" required>
+                </label>
+                <label for="apellido">Email
+                    <input class="email" type="email" placeholder="Tu Email">
+                </label>
+                <label>Telefono
+                    <input class="telefono" type="text" placeholder="Tu Telefono">
+                </label>
+                <label>Direccion
+                    <input class="direccion" type="text" placeholder="Tu Direccion">
+                </label>
+                <label>Contraseña
+                    <input class="contrasena" type="password" placeholder="Contraseña">
+                </label>
+                <label>Repetir Contraseña
+                    <input class="contrasena" type="password" placeholder="Repetir Contraseña">
+                </label>
 
-                        <div class="campo">
-                            <label>Contraseña
-                            <input class="input-text" type="password" placeholder="">
-                            </label>
-                        </div>
-                        <div class="campo">
-                            <label>Repetir Contraseña
-                            <input class="input-text" type="password" placeholder="">
-                            </label>
-                        </div>
 
-                        <div class="campo">
-                            <label>Direccion
-                                <input class="input-text" type="text" placeholder="">
-                            </label>
-                        </div>
-                    </div> <!-- .contenedor-campos -->
-
-                    <div class="alinear-derecha flex">
-                        <input class="boton w-sm-100" type="submit" value="Enviar">
-                    </div>
-                </fieldset>
+                <button type="submit" title="Ingresar" name="Ingresar">Login</button>
             </form>
+
+        </div>
+        <div id="derecho">
+            <div class="titulo">
+                Bienvenido
+            </div>
+            <hr>
+            <div class="pie-form">
+                <a href="../registrar/index.html">¿Ya tienes cuenta? Incia Sesion</a>
+                <hr>
+                <a href="../index.html">« Volver</a>
+            </div>
+        </div>
     </div>
+</div>
 </body>
 </html>
+
+
