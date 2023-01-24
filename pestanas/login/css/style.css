@@ -123,10 +123,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    background-color: var(--mediorojo);
     padding: 1rem;
-    background-color: rgba(255, 0, 0, .5);
-    
 }
 
 /** Productos **/
