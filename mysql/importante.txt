@@ -1,0 +1,2 @@
+El archivo tiendaropa.sql --> sin datos
+El archivo tienda_ropa.sql --> con datos de productos, servicios, categoria etc 
