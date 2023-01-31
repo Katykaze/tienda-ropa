@@ -1,0 +1,286 @@
+:root {
+    --primario: #9C27B0;
+    --primarioOscuro: #89119D;
+    --secundario: #ee49fd;
+    --secundarioOscuro: rgb(233, 187, 2);
+    --blanco: #FFF;
+    --negro: #000;
+    --mediorojo: #B22222;
+    --fuentePrincipal: 'Staatliches', cursive;
+    --texto: #fff9d2;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Globales **/
+body {
+    background-color: var(--negro);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-image: url(../imagenes/street.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--secundario);
+
+}
+
+
+
+img {
+    width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+/** Header **/
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+.header__logo {
+    margin: 3rem 0;
+}
+
+
+/** Footer **/
+.footer {
+    background-color: var(--mediorojo);
+    padding: 0.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer__texto {
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--texto);
+}
+
+/** Navegacion **/
+.navegacion {
+    background-color: var(--mediorojo);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--texto);
+    font-size: 3rem;
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: var(--secundario);
+}
+.navegacion>a.navegacion__enlace{
+    text-decoration: none;
+}
+
+/** Grid **/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/** Productos **/
+.producto {
+    background-color: var(--mediorojo);
+    padding: 1rem;
+    background-color: rgba(255, 0, 0, .5);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#parrafo1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#parrafo2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.producto__nombre {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--texto);
+    font-family: var(--fuentePrincipal);
+}
+
+/*footer redes sociales*/
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.social-icons li {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    font-size: 20px;
+}
+.social-icons i {
+    color: #fff;
+    position: relative;
+    top: -43px;
+    left: 1px;
+    transition: all 265ms ease-out;
+    /*line-height:;*/
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons a::before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(43deg, var(--secundario) 0%, var(--primario) 46%, var(--primarioOscuro) 100%);
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover::before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+
+}
+
+.social-icons a:hover i {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    color: #fff;
+    background: linear-gradient(43deg, var(--secundario) 0%, var(--primario) 46%, var(--primarioOscuro) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+.log{
+    font-size: 27px;
+}
+/*+++++++++++++++++++++++++++++CARRUSEL DE IMAGENES*++++++++++++++++++++++++++++++++++++++/
+/* Para el ancho y alto de las imagenes. Modificalo a gusto =)  */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 50%;
+    height: 300px;
+    margin: auto;
+}
+/* Para los margenes del contendor de las fotos. Podes cambiarle el ancho a gusto tambien! */
+.carousel-control {
+    width: 20%;
+}
+
+/*el otro carrusel*/
+#carrusel2 img{
+    width: 100%;
+    height: 100%;
+}
+/*@media querys*/
+@media (max-width: 700px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    .navegacion {
+        flex-direction: column;
+    }
+
+    .navegacion__enlace {
+        text-align: center;
+    }
+
+    #parrafo2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        font-size: 10px;
+    }
+
+    .producto__nombre{
+        text-align: center;
+        font-size: 30px;
+    }
+    #carrusel2 img,#carrusel img{
+        width: 80%;
+        height: 80%;
+    }
+    .grid p{
+        font-size: 2rem;
+    }
+    .navegacion__enlace{
+        font-size: 2rem;
+    }
+}
+@media(min-width:700px) and (max-width:1000px){
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+    #carrusel2 img,#carrusel img{
+        width: 70%;
+        height: 70%;
+    }
+    .grid p{
+        font-size: 2.5rem;
+    }
+   
+}
+
+
