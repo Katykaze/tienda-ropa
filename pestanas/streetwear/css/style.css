@@ -41,6 +41,9 @@ p {
 img {
     width: 100%;
 }
+img#img-1,img#img-2{
+    height:745px;
+}
 
 .contenedor {
     max-width: 120rem;
@@ -129,23 +132,14 @@ h3 {
     margin-top: 1rem;
 }
 
-#parrafo1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
 
-#parrafo2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
 
-.producto__nombre {
+p.producto__nombre {
     text-align: center;
     font-size: 3.5rem;
     color: var(--texto);
     font-family: var(--fuentePrincipal);
+    text-decoration: none;
 }
 
 /*footer redes sociales*/
@@ -207,24 +201,6 @@ h3 {
 .log{
     font-size: 27px;
 }
-/*+++++++++++++++++++++++++++++CARRUSEL DE IMAGENES*++++++++++++++++++++++++++++++++++++++/
-/* Para el ancho y alto de las imagenes. Modificalo a gusto =)  */
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 50%;
-    height: 300px;
-    margin: auto;
-}
-/* Para los margenes del contendor de las fotos. Podes cambiarle el ancho a gusto tambien! */
-.carousel-control {
-    width: 20%;
-}
-
-/*el otro carrusel*/
-#carrusel2 img{
-    width: 100%;
-    height: 100%;
-}
 /*@media querys*/
 @media (max-width: 700px) {
     .grid {
@@ -254,10 +230,7 @@ h3 {
         text-align: center;
         font-size: 30px;
     }
-    #carrusel2 img,#carrusel img{
-        width: 80%;
-        height: 80%;
-    }
+
     .grid p{
         font-size: 2rem;
     }
@@ -273,10 +246,14 @@ h3 {
         gap: 2rem;
 
     }
-    #carrusel2 img,#carrusel img{
+    img{
         width: 70%;
         height: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
+
     .grid p{
         font-size: 2.5rem;
     }
