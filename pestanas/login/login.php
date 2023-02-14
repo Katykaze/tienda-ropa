@@ -1,8 +1,13 @@
+<?php
+include '../php/functions.php';
+if(userCookieExists()){
+    echo "<script>location.href='../basket/index.html';</script>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +37,7 @@
     <a class="navegacion__enlace" href="../servicios/servicios.html">Servicios</a>
     <a class="navegacion__enlace" href="../deporte/deporte.html">Ropa Deportiva</a>
     <a class="navegacion__enlace" href="../nosotros/nosotros.html">Nosotros</a>
-    <a href="index.html" id="icon-login" class="log navegacion__enlace navegacion__enlace--activo"><i
+    <a href="login.php" id="icon-login" class="log navegacion__enlace navegacion__enlace--activo"><i
             class="bi bi-person-fill"></i></a>
     <a href="../basket/index.html" id="icon-basket" class="log navegacion__enlace"><i class="bi bi-cart-fill"></i></a>
 </nav>
