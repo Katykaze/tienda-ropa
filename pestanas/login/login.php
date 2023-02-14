@@ -45,12 +45,12 @@ if(userCookieExists()){
 <main class="contenedor">
     <div class="grid">
         <div class="producto">
-            <p><a class="navegacion__enlace" href="registrar/index.html">Iniciar Sesion</a></p>
+            <p><a class="navegacion__enlace" href="registrar/registrar.php">Iniciar Sesion</a></p>
             <p><i class="bi bi-person-check"></i></p>
         </div>
 
         <div class="producto">
-            <p><a class="navegacion__enlace" href="crear/index.html">Registrarse</a></p>
+            <p><a class="navegacion__enlace" href="crear/crear.php">Registrarse</a></p>
             <p><i class="bi bi-person-add"></i></p>
         </div>
         <br>

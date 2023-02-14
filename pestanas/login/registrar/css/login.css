@@ -8,7 +8,9 @@ body {
     margin: 0;
     background-color: #5f6769;
 }
-
+#usuario,#password{
+    color:black;
+}
 /* efectos para el contenedor de pantalla completa */
 #contenedor {
     display: flex;
@@ -90,7 +92,7 @@ body {
 #login input {
     font-family: 'Overpass', sans-serif;
     font-size: 110%;
-    color: #fff9d2;
+    color: #a9152c;
 
     display: block;
     width: 100%;
