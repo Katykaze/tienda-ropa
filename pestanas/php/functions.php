@@ -44,12 +44,22 @@ function getNumberUserIfExists($conn, $number_user, $password)
     }
     return [];
 }
-
-//funcion crear cookie con valor numero de usuario
-function createUserCookie($user)
+//funcion de inicio de sesion usuario logeado
+function isUserLogged()
 {
-    setcookie('name', $user, time() + (86400 * 30), "/");
+    session_start();
+    if (isset($_SESSION['number'])) {
+        return true;
+    } else {
+        return false;
+    }
+
 }
+//funcion crear cookie con valor numero de usuario
+//function createUserCookie($user)
+//{
+//    setcookie('name', $user, time() + (86400 * 30), "/");
+//}
 
 //funcion crear basket cookie
 function createBasketCookie()
@@ -129,7 +139,16 @@ function getIdNewClient($conn,$nombre,$apellido){
             echo "NO SE PUEDE DAR DE ALTA <BR>";
         }
     }
+return [];
+}
+//para la pagina de servicios, mostrar en tabla
+function getInformationAboutPorducts($conn){
+    try{
+        $stmt = $conn->prepare("SELECT");
 
+    }catch (PDOException $e){
+        echo $e->getMessage();
+    }
 }
 ////---------------------------EJERCICIO 2---------------------------
 ////informacion de productos cuyo stock sea mayor que cero

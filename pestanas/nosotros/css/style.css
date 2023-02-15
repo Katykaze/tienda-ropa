@@ -175,6 +175,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+
 }
 
 
@@ -200,12 +201,11 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
-
     .nosotros__imagen {
         grid-column: 2 / 3;
     }
+    /*.bloques {*/
+    /*    grid-template-columns: 1fr 1fr;*/
+    /*}*/
 
-    .bloques {
-        grid-template-columns: repeat(4, 1fr);
-    }
 }

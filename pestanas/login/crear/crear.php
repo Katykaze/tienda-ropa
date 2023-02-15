@@ -9,10 +9,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $direc=test_input($_POST['direccion']);
         $telef=test_input($_POST['telefono']);
         insertClient($conn,$nombre,$apellido,$email,$direc,$telef);
-        //CREAR COOKIE DE UUSARIO!!!!
-        createUserCookie(getIdNewClient($conn,$nombre,$apellido));
+        //CREAR SESION DE UUSARIO!!!! sin necesidad de volver a logearse ????
+        $_SESSION['number']=getIdNewClient($conn,$nombre,$apellido);
+        //createUserCookie(getIdNewClient($conn,$nombre,$apellido));
         createBasketCookie();
-        echo "<script>window.open('../../streetwear/streetwear.html')</script>";
+        echo "<script>window.open('../../basket/basket.php')</script>";
         $conn=closeConn($conn);
     }else{
         echo "Por favor, introduzca un calor correcto </br>";
@@ -58,9 +59,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
             <hr>
             <div class="pie-form">
-                <a href="../registrar/index.html">¿Ya tienes cuenta? Incia Sesion</a>
+                <a href="../registrar/registrar.php">¿Ya tienes cuenta? Incia Sesion</a>
                 <hr>
-                <a href="../index.html">« Volver</a>
+                <a href="../login.php">« Volver</a>
             </div>
         </div>
     </div>

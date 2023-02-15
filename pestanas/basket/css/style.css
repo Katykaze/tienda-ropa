@@ -6,7 +6,7 @@
     --blanco: #FFF;
     --negro: #000;
     --mediorojo: #B22222;
-    --fuentePrincipal:'Staatliches', cursive;
+    --fuentePrincipal: 'Staatliches', cursive;
     --texto: #fff9d2;
 }
 
@@ -273,8 +273,6 @@ h3 {
     }
 
 }
-
-
 
 
 

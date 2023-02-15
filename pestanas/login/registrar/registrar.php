@@ -1,6 +1,7 @@
 <?php
+session_start();
 include '../../php/functions.php';
-var_dump($_COOKIE);
+//var_dump($_COOKIE);
 ?>
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -16,7 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             echo "No existe registro de este usuario";
         } else {
-            createUserCookie($user);
+            //createUserCookie($user);
+            $_SESSION['number']=$user;
             //aqui creamos cookie de carrito de compra
             //la creo nada mas iniciar sesion
             if (!basketCookieExists()) {

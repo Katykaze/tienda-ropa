@@ -1,8 +1,11 @@
 <?php
 include '../php/functions.php';
-if(userCookieExists()){
-    echo "<script>location.href='../basket/index.html';</script>";
+if (isUserLogged()) {
+    echo "<script>location.href='../basket/basket.php';</script>";
 }
+//if(userCookieExists()){
+//    echo "<script>location.href='../basket/basket.php';</script>";
+//}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +30,7 @@ if(userCookieExists()){
 
 <body>
 <header class="header">
-    <a href="index.html">
+    <a href="../../index.html">
         <img class="header__logo" src="img/logo.png" alt="Logotipo">
     </a>
 </header>
@@ -39,7 +42,7 @@ if(userCookieExists()){
     <a class="navegacion__enlace" href="../nosotros/nosotros.html">Nosotros</a>
     <a href="login.php" id="icon-login" class="log navegacion__enlace navegacion__enlace--activo"><i
             class="bi bi-person-fill"></i></a>
-    <a href="../basket/index.html" id="icon-basket" class="log navegacion__enlace"><i class="bi bi-cart-fill"></i></a>
+    <a href="../basket/basket.php" id="icon-basket" class="log navegacion__enlace"><i class="bi bi-cart-fill"></i></a>
 </nav>
 
 <main class="contenedor">
