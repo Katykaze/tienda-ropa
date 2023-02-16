@@ -24,9 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if (!basketCookieExists()) {
                 createBasketCookie();
             }
-            //llevar al menu del cliente
-            echo "<script>window.open('../../streetwear/streetwear.html')</script>";
-            //echo $link;
+            echo "<script>location.href='../../streetwear/streetwear.html'</script>";
         }
         $conn = closeConn($conn);
     } else {
