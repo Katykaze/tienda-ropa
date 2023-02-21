@@ -6,12 +6,18 @@
     <title>FrontEnd Store</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+<!--    archivos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <a href="../../../index.html">
-            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+            <img class="header__logo" src="../imagenes/logo.png" alt="Logotipo">
         </a>
     </header>
 
@@ -21,6 +27,8 @@
         <a class="navegacion__enlace" href="../../servicios/servicios.html">Servicios</a>
         <a class="navegacion__enlace" href="../../deporte/deporte.html">Ropa Deportiva</a>
         <a class="navegacion__enlace" href="../../nosotros/nosotros.html">Nosotros</a>
+        <a href="../../login/login.php" id="icon-login" class="log navegacion__enlace"><i class="bi bi-person-fill"></i></a>
+        <a href="../../basket/basket.php" id="icon-basket" class="log navegacion__enlace"><i class="bi bi-cart-fill"></i></a>
     </nav>
 
     <main class="contenedor">
@@ -30,9 +38,7 @@
          <img class="camisa__imagen" src="img/sudadera01.jpg" alt="Imagen del Producto"> 
 
             <div class="camisa__contenido">
-                <p>Maecenas consectetur ultricies mi vel venenatis. Curabitur risus tellus, congue non tellus at, semper
-                    dapibus turpis. Duis pellentesque, risus sit amet placerat porttitor, tortor augue volutpat ante,
-                     non dignissim odio ligula at arcu.</p>
+                <p>Maecenas consectetur ultricies mi vel venenatis. Curabitur risus tellus, congue non tellus .</p>
 
                 <form class="formulario">
                     <fieldset>
@@ -51,7 +57,7 @@
                         <label for="con" class="opcion">Con Capucha</label>
                         <br>
                         <input type="radio" name="cap" id="sin" class="radio">
-                        <label for="sin"class="opcion">Sin Capucha</label>
+                        <label for="sin" class="opcion">Sin Capucha</label>
                     </fieldset>
                     <br>
                     <fieldset>
@@ -63,7 +69,7 @@
                         <label for="serigrafiado" class="opcion" id="serigrafiado">Serigrafiado</label>
                         <br>
                         <br>
-                        <div id="seri" hidden>
+                        <div id="seri" >
                             
                             <label for="seri"  class="opcion" >Serigrafiado</label>
                             <select name="serigrafiado" id="seri" >
@@ -74,7 +80,7 @@
                             </select></div>
                         
                         <br>
-                        <div id="bord" hidden>
+                        <div id="bord" >
                             <label for="bord" class="opcion">Bordado</label>
                             <select name="bordado" id="seri" >
                                 <option value="Default">Seleccion</option>
@@ -108,7 +114,16 @@
     </main>
 
     <footer class="footer">
-        <p class="footer__texto"></p>
+<!--        <ul class="social-icons">-->
+<!--            <li>-->
+<!--                <a href="#"><i class="bi bi-instagram"></i></a>-->
+<!--                <a href="#"><i class="bi bi-facebook"></i></a>-->
+<!--                <a href="#"><i class="bi bi-linkedin"></i></a>-->
+<!--                <a href="#"><i class="bi bi-twitter"></i></a>-->
+<!--            </li>-->
+<!--        </ul>-->
+
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados.</p>
     </footer>
     
 </body>
