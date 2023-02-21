@@ -1,0 +1,14 @@
+<img src="[colores] (importada)" width="370" height="70" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Patryk -->
+<area shape="rect" coords="0,0,71,70" target="negro"  nohref="nohref" />
+<area shape="rect" coords="72,0,144,70" target="rojo"  nohref="nohref" />
+<area shape="rect" coords="144,0,222,70" target="morado"  nohref="nohref" />
+<area shape="rect" coords="222,0,293,69" target="verde"  nohref="nohref" />
+<area shape="rect" coords="293,0,370,70" target="blanco"  nohref="nohref" />
+</map>
