@@ -6,6 +6,14 @@ if(!isUserLogged() || !basketCookieExists()){
 }
 var_dump($_SESSION['number']);
 var_dump($_COOKIE['basket']);
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    if (isset($_POST["logout"])) {
+        //cerrar sesion
+        logoutUser();
+        closeCookieBasket();
+        echo "<script>location.href='../login/login.php'</script>";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,8 +63,11 @@ var_dump($_COOKIE['basket']);
         </div>
         <br>
         <div class="producto" id="parrafo1">
-            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-            </p>
+            <form method="post">
+                <input type="submit" name="logout" value="cerrar sesión">
+            </form>
+<!--            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.-->
+<!--            </p>-->
         </div>
     </div>
 </main>

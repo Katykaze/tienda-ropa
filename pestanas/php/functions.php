@@ -103,6 +103,12 @@ function closeCookieBasket()
         setcookie('basket', '', time() - 3600, '/');
     }
 }
+function logoutUser()
+{
+    $_SESSION = array();
+    unset($_SESSION);
+    session_destroy();
+}
 //---------------------REGISTRO DE USUARIOS
 function insertClient($conn, $nombre, $apellido, $email, $direc, $telef)
 {
@@ -142,14 +148,7 @@ function getIdNewClient($conn,$nombre,$apellido){
 return [];
 }
 //para la pagina de servicios, mostrar en tabla
-function getInformationAboutPorducts($conn){
-    try{
-        $stmt = $conn->prepare("SELECT");
 
-    }catch (PDOException $e){
-        echo $e->getMessage();
-    }
-}
 ////---------------------------EJERCICIO 2---------------------------
 ////informacion de productos cuyo stock sea mayor que cero
 //function getInfoProducts($conn)
