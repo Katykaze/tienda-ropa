@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisetas</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <!--    archivos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+    <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <a href="../../../index.html">
+        <img class="header__logo" src="../imagenes/logo.png" alt="Logotipo">
+    </a>
+</header>
+
+<nav class="navegacion">
+    <a class="navegacion__enlace" href="../../../index.html">Home</a>
+    <a class="navegacion__enlace navegacion__enlace--activo" href="../streetwear.html">Streetwear</a>
+    <a class="navegacion__enlace" href="../../servicios/servicios.html">Servicios</a>
+    <a class="navegacion__enlace" href="../../deporte/deporte.html">Ropa Deportiva</a>
+    <a class="navegacion__enlace" href="../../nosotros/nosotros.html">Nosotros</a>
+    <a href="../../login/login.php" id="icon-login" class="log navegacion__enlace"><i class="bi bi-person-fill"></i></a>
+    <a href="../../basket/basket.php" id="icon-basket" class="log navegacion__enlace"><i class="bi bi-cart-fill"></i></a>
+</nav>
+
+<main class="contenedor">
+    <h2>Sudaderas</h2>
+
+    <div class="camisa">
+        <img class="camisa__imagen" src="img/camiseta01.jpg" alt="Imagen del Producto">
+
+        <div class="camisa__contenido">
+            <p>Maecenas consectetur ultricies mi vel venenatis. Curabitur risus tellus, congue non tellus .</p>
+
+            <form class="formulario">
+                <fieldset>
+                    <legend class="form">Genero</legend>
+                    <input type="radio" name="genero" id="h" class="radio">
+                    <label for="h" class="opcion">Hombre</label>
+                    <br>
+                    <input type="radio" name="genero" id="m" class="radio">
+                    <label for="m" class="opcion">Mujer</label>
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend class="form">Complemento</legend>
+                    <input type="radio" name="cap" id="con" class="radio">
+                    <label for="con" class="opcion">Con Capucha</label>
+                    <br>
+                    <input type="radio" name="cap" id="sin" class="radio">
+                    <label for="sin" class="opcion">Sin Capucha</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend class="form">Accesorios</legend>
+                    <input type="checkbox" name="bordado">
+                    <label for="bordado" class="opcion" id="bordado">Bordado</label>
+                    <br>
+                    <input type="checkbox" name="serigrafiado">
+                    <label for="serigrafiado" class="opcion" id="serigrafiado">Serigrafiado</label>
+                    <br>
+                    <br>
+                    <div class="seri" >
+
+                        <label for="seri"  class="opcion" >Serigrafiado</label>
+                        <select name="serigrafiado" class="seri" >
+                            <option value="Default">Seleccion</option>
+                            <option value="New York">New York </option>
+                            <option value="Boston">Boston </option>
+
+                        </select></div>
+
+                    <br>
+                    <div id="bord" >
+                        <label for="bord" class="opcion">Bordado</label>
+                        <select name="bordado" id="seri" >
+                            <option value="Default">Seleccion</option>
+                            <option value="New York">New York </option>
+                            <option value="Boston">Boston </option>
+
+                        </select>
+                    </div>
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend class="form">Color</legend>
+                    <p id="col">Color:</p>
+                    <img src="img/negro.jpg" alt="negro" id="negro" class="color">
+                    <img src="img/rojo.jpg" alt="rojo" id="rojo" class="color">
+                    <img src="img/morado.jpg" alt="morado" id="morado" class="color">
+                    <img src="img/verde.jpg" alt="verde" id="verde" class="color">
+                    <img src="img/blanco.jpg" alt="blanco" id="blanco" class="color">
+
+                </fieldset>
+                <br>
+
+                <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" id="cant">
+
+                <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                <br>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <!--        <ul class="social-icons">-->
+    <!--            <li>-->
+    <!--                <a href="#"><i class="bi bi-instagram"></i></a>-->
+    <!--                <a href="#"><i class="bi bi-facebook"></i></a>-->
+    <!--                <a href="#"><i class="bi bi-linkedin"></i></a>-->
+    <!--                <a href="#"><i class="bi bi-twitter"></i></a>-->
+    <!--            </li>-->
+    <!--        </ul>-->
+
+    <p class="footer__texto">Front End Store - Todos los derechos Reservados.</p>
+</footer>
+
+</body>
+</html>
